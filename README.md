@@ -1,67 +1,122 @@
-◈ Pulse — Social Media App
+# ◈ Pulse — Social Media App
 
-Where moments become memories
+> *Where moments become memories*
 
-A full-stack mini social media platform built with Express.js, NeDB and Vanilla JS.
+A full-stack **mini social media platform** built from scratch using **Express.js**, **NeDB**, and **Vanilla JavaScript** — no frameworks, no fluff.
 
-✨ Features
+---
 
-🔐 JWT Auth (Register / Login)
-👤 User profiles with photo upload
-📝 Posts with image & audio attachments
-❤️ Like with burst animation & 💬 Comments
-👥 Follow / Unfollow system
-🎵 In-post music player
-🎨 Custom post & profile background themes
-🔍 Explore & search users
+## 🚀 Live Features
 
+| Feature | Details |
+|---|---|
+| 🔐 Auth | Register & Login with JWT |
+| 👤 Profiles | Avatar photo upload, bio, custom background theme |
+| 📝 Posts | Text posts with image & audio attachments |
+| ❤️ Likes | Animated heart burst on like |
+| 💬 Comments | Real-time comment add & delete |
+| 👥 Follow System | Follow / Unfollow users |
+| 🎵 Music Player | In-post audio player with progress bar |
+| 🎨 Backgrounds | 12 post BG colors + 10 profile themes |
+| 🔍 Explore | Search users, browse all posts |
 
-🛠 Tech Stack
-LayerTechnologiesFrontendHTML5, CSS3, Vanilla JavaScriptBackendNode.js, Express.jsDatabaseNeDB (file-based NoSQL)AuthJWT + bcryptjsUploadsMulter
+---
 
-📋 Prerequisites
-Before running this project, make sure you have installed:
+## 🛠 Tech Stack
 
-Node.js v18 or higher
-npm (comes with Node.js)
+**Frontend**
+- HTML5, CSS3, Vanilla JavaScript
+- Custom dark UI with animations
 
-Check your version:
-bashnode -v
-npm -v
+**Backend**
+- Node.js + Express.js
+- NeDB (file-based NoSQL database)
+- JWT Authentication
+- Multer (file uploads)
+- bcryptjs (password hashing)
 
-⚡ Installation & Setup
-Step 1 — Clone the repository
-bashgit clone https://github.com/YOUR_USERNAME/pulse-social.git
-Step 2 — Go into the project folder
-bashcd pulse-social/socialmedia
-Step 3 — Install dependencies
-bashnpm install
-Step 4 — Start the server
-bashnode server.js
-Step 5 — Open in browser
-http://localhost:3000
+---
 
-🧪 Demo Accounts
-EmailPasswordalice@demo.compassword123bob@demo.compassword123carol@demo.compassword123
-
-📁 Project Structure
+## 📁 Project Structure
 socialmedia/
-├── server.js          # Express backend & API routes
-├── package.json       # Dependencies
+├── server.js              # Express backend & API routes
+├── package.json
 ├── public/
-│   ├── index.html     # Single page app
-│   ├── css/
-│   │   └── style.css  # All styles
-│   ├── js/
-│   │   └── app.js     # Frontend logic
-│   └── uploads/       # User uploaded files
+│   ├── index.html         # Single page app
+│   ├── css/style.css      # All styles
+│   ├── js/app.js          # Frontend logic
+│   └── uploads/           # User uploaded files
 │       ├── avatars/
 │       ├── posts/
 │       └── songs/
-└── data/              # NeDB database files
+└── data/                  # NeDB database files
+---
 
-🌐 API Endpoints
-MethodRouteDescriptionPOST/api/auth/registerRegister new userPOST/api/auth/loginLogin userGET/api/feedGet following feedGET/api/postsGet all postsPOST/api/postsCreate new postPOST/api/posts/:id/likeLike / Unlike postGET/api/posts/:id/commentsGet commentsPOST/api/posts/:id/commentsAdd commentPOST/api/follow/:userIdFollow / UnfollowGET/api/users/:usernameGet user profilePUT/api/users/meUpdate profilePOST/api/users/me/avatarUpload avatar photo
+## ⚡ Getting Started
 
-📄 License
-MIT — Made with ❤️ by Thangasaranya
+### Prerequisites
+- Node.js v18+
+- npm
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/YOUR_USERNAME/pulse-social.git
+cd pulse-social
+
+# Install dependencies
+npm install
+
+# Start the server
+node server.js
+```
+
+Open your browser → **http://localhost:3000**
+
+---
+
+## 🧪 Demo Accounts
+
+| Email | Password |
+|---|---|
+| alice@demo.com | password123 |
+| bob@demo.com | password123 |
+| carol@demo.com | password123 |
+
+---
+
+## 📸 Screenshots
+
+> Add your screenshots here after running the app!
+
+---
+
+## 🌐 API Endpoints
+
+| Method | Route | Description |
+|---|---|---|
+| POST | `/api/auth/register` | Register user |
+| POST | `/api/auth/login` | Login user |
+| GET | `/api/feed` | Get following feed |
+| GET | `/api/posts` | Get all posts |
+| POST | `/api/posts` | Create post |
+| POST | `/api/posts/:id/like` | Like / Unlike |
+| GET | `/api/posts/:id/comments` | Get comments |
+| POST | `/api/posts/:id/comments` | Add comment |
+| POST | `/api/follow/:userId` | Follow / Unfollow |
+| GET | `/api/users/:username` | Get profile |
+| PUT | `/api/users/me` | Update profile |
+| POST | `/api/users/me/avatar` | Upload avatar |
+
+---
+
+## 🙌 Author
+
+Made with ❤️ by Thangasaranya
+
+---
+
+## 📄 License
+
+MIT License — free to use and modify
